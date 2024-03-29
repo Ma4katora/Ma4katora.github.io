@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Story</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url('ChatGPT/Background.jpg');
+            /* Replace 'background_image.jpg' with your background image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .character img {
+            display: block;
+            width: 200px;
+            /* Adjust the width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 50%;
+            /* Make the images circular */
+            margin: 20px;
+        }
+
+        .character-name {
+            position: absolute;
+            bottom: -20px;
+            /* Center horizontally */
+            left: 7%;
+            transform: translateX(100%);
+            transform: translateY(25%);
+            margin-left: 8px;
+            margin-bottom: 100px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            visibility: hidden;
+            /* Hide the name initially */
+            opacity: 0;
+            /* Hide the name initially */
+            transition: visibility 0.3s, opacity 0.3s;
+            /* Smooth transition for visibility and opacity */
+        }
+
+        .character:hover .character-name {
+            visibility: visible;
+            /* Show the name on hover */
+            opacity: 1;
+            /* Show the name on hover */
+        }
+
+        .story-container {
+            background-color: rgba(255, 255, 255, 0.801);
+            /* Semi-transparent white background for readability */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            text-align: center;
+            /* Center-align the text */
+            color: #333;
+            /* Set text color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            /* Add a subtle shadow around the text */
+        }
+
+        .navigation-link {
+            color: #333;
+            /* Set color of the arrow */
+            text-decoration: none;
+            /* Remove underline */
+        }
+        ю
+
+        .navigation-link:hover {
+            color: #666;
+            /* Change color on hover */
+        }
+
+        #navigation-arrow {
+            position: fixed;
+            bottom: 20px;
+            /* Adjust distance from bottom */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="character" data-name="Sarah">
+                    <img src="ChatGPT/First Women3.png" alt="Character 1" class="character-img">
+                    <span class="character-name">Sarah "Slick" Thompson</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="character" data-name="Jax">
+                    <img src="ChatGPT/Man3.png" alt="Character 2" class="character-img">
+                    <span class="character-name">Jackson "Jax" Reynolds </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="character" data-name="Elena">
+                    <img src="ChatGPT/Second Women3.png" alt="Character 3" class="character-img">
+                    <span class="character-name">Elena "Blaze" Rodriguez</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="story-container">
+                    <h2 class="text-center">The untold story of Batman</h2><br>
+                    <p class="text-center">The city sprawled beneath them like a patchwork quilt of lights, each flicker
+                        a testament to the lives lived within its embrace. Sarah "Slick" Thompson leaned against the
+                        rusted railing of the rooftop, her gaze fixed on the distant horizon as she awaited their
+                        mysterious client. The air was thick with anticipation, a tangible tension that hung heavy in
+                        the night.
+
+                        Beside her, Jackson "Jax" Reynolds stood tall and stoic, his sharp eyes scanning the
+                        surroundings with a vigilance born of years spent on the battlefield. He wore the mantle of his
+                        past with ease, a silent guardian ready to defend his comrades at a moment's notice. His
+                        presence was a comfort to Sarah, a reassuring reminder that no matter what dangers lay ahead,
+                        they would face them together.
+
+                        Across from them paced Elena "Blaze" Rodriguez, her restless energy palpable in the stillness of
+                        the night. With each step, she left a trail of chaos in her wake, her fiery spirit impossible to
+                        contain within the confines of the rooftop. She cracked her knuckles in anticipation, a
+                        mischievous grin playing across her lips as she awaited the start of their latest adventure.
+
+                        As they waited, Sarah's eyes fell upon an unexpected sight - a lone porta-potty tucked away in
+                        the corner of the rooftop, incongruous against the backdrop of urban decay. Its faded blue
+                        exterior bore the unmistakable emblem of a bat, a whimsical nod to a legendary figure known to
+                        patrol the streets below. With a bemused smile, Sarah motioned for her companions to follow as
+                        she approached the curious structure.
+
+                        "What in the world?" Elena exclaimed, her laughter echoing against the concrete walls as she
+                        peered inside.
+
+                        To their surprise, the interior of the porta-potty was adorned with all manner of bat-themed
+                        paraphernalia, from a cape and cowl hanging on a makeshift coat rack to a utility belt draped
+                        over the toilet tank. But the most amusing discovery of all was the roll of toilet paper
+                        emblazoned with the unmistakable symbol of a bat in flight, a tongue-in-cheek tribute to the
+                        caped crusader himself.
+
+                        "Looks like Batman has a sense of humor after all," Jax remarked, his lips quirking up in a rare
+                        smile as he reached for the roll.
+
+                        With a shrug, Sarah followed suit, tearing off a few sheets of the coveted toilet paper before
+                        tucking it into her pack. It was a small act of rebellion in the face of the night's
+                        uncertainties, a reminder that even in the darkest of times, there was always room for a moment
+                        of levity.
+
+                        And so, with the memory of Batman's toilet paper tucked safely away, they turned their attention
+                        back to the task at hand, ready to embark on their latest mission with renewed determination and
+                        a newfound sense of camaraderie. For as they would soon discover, the night held many surprises
+                        yet to come, each one more unexpected than the last.</p> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Your existing content here -->
+
+        <!-- Navigation arrow -->
+        <div class="row">
+            <div class="col-md-12 text-center" id="navigation-arrow">
+                <a href="Page2.html" class="navigation-link">
+                    <i class="fas fa-arrow-circle-down fa-3x"></i> <!-- Font Awesome arrow icon -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

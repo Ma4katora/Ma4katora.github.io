@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Story</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url('ChatGPT/Background.jpg');
+            /* Replace 'background_image.jpg' with your background image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .character {
+            position: relative;
+        }
+
+        .character img {
+            display: block;
+            width: 200px;
+            /* Adjust the width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 50%;
+            /* Make the images circular */
+            margin: 20px;
+            /* Adjust margin as needed */
+        }
+
+        .character-name {
+            position: absolute;
+            bottom: -20px;
+            /* Center horizontally */
+            left: 7%;
+            transform: translateX(100%);
+            transform: translateY(25%);
+            margin-left: -5px;
+            margin-bottom: 80px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            visibility: hidden;
+            /* Hide the name initially */
+            opacity: 0;
+            /* Hide the name initially */
+            transition: visibility 0.3s, opacity 0.3s;
+            /* Smooth transition for visibility and opacity */
+        }
+
+        .character:hover .character-name {
+            visibility: visible;
+            /* Show the name on hover */
+            opacity: 1;
+            /* Show the name on hover */
+        }
+
+        .story-container {
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Semi-transparent white background for readability */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            text-align: center;
+            /* Center-align the text */
+            color: #333;
+            /* Set text color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            /* Add a subtle shadow around the text */
+        }
+
+        .navigation-link {
+            color: #333;
+            /* Set color of the arrow */
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .navigation-link:hover {
+            color: #666;
+            /* Change color on hover */
+        }
+
+        #navigation-arrow {
+            position: fixed;
+            bottom: 20px;
+            /* Adjust distance from bottom */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #back-button {
+            color: #333;
+            position: fixed;
+            bottom: 25px;
+            /* Adjust distance from bottom */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .btn-custom {
+            color: #c5c5c5;
+            /* Set text color of the button */
+            background-color: #333;
+            /* Set background color of the button to grey */
+        }
+
+        .btn-custom:hover {
+            background-color: #999;
+            /* Change background color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="character" data-name="Sarah">
+                    <img src="ChatGPT/First Women3.png" alt="Character 1" class="character-img">
+                    <span class="character-name">Sarah "Slick" Thompson</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="character" data-name="Jax">
+                    <img src="ChatGPT/Man3.png" alt="Character 2" class="character-img">
+                    <span class="character-name">Jackson "Jax" Reynolds </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="character" data-name="Elena">
+                    <img src="ChatGPT/Second Women3.png" alt="Character 3" class="character-img">
+                    <span class="character-name">Elena "Blaze" Rodriguez</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="story-container">
+                    <h2 class="text-center">The untold story of Batman</h2><br>
+                    <p class="text-center">As the sun dipped below the horizon, casting a warm golden hue over the
+                        desert oasis, Sarah, Jax, and Elena lounged on the sandy shore, their laughter mingling with the
+                        gentle rustle of palm fronds overhead. It was a moment of rare tranquility amidst the chaos of
+                        their lives, a chance to rest and recharge before their next adventure.
+
+                        But as they basked in the peacefulness of the oasis, a shadow fell over them, drawing their
+                        attention to the figure standing at the water's edge. With a start, they recognized the
+                        unmistakable silhouette of Batman himself, his cape billowing in the desert breeze as he
+                        approached.
+
+                        "Uh, guys?" Elena whispered, her eyes widening in disbelief as she nudged her companions.
+
+                        Sarah and Jax exchanged a puzzled glance before turning their attention to the caped crusader
+                        standing before them. Batman's expression was stern as he surveyed the scene, his gaze settling
+                        on the roll of toilet paper tucked into Sarah's pack.
+
+                        "I believe you have something that belongs to me," Batman said, his voice low and gravelly as he
+                        pointed a gloved finger at the coveted roll.
+
+                        Sarah's cheeks flushed with embarrassment as she realized the gravity of the situation. They had
+                        taken Batman's toilet paper without permission, and now the Dark Knight himself had come to
+                        reclaim it.
+
+                        "I-I'm sorry," Sarah stammered, her voice barely above a whisper as she handed the roll of
+                        toilet paper back to Batman. "We didn't mean to take it, it was just...there."
+
+                        Batman accepted the roll with a nod of thanks, his expression softening slightly as he tucked it
+                        away into the depths of his utility belt.
+
+                        "Consider this a warning," Batman said, his tone stern but not unkind. "Next time, ask before
+                        you take."
+
+                        With that, Batman disappeared into the darkness, leaving Sarah, Jax, and Elena to ponder the
+                        strange encounter. As they watched him vanish into the night, a sense of awe washed over them,
+                        mingled with a newfound respect for the caped crusader who had crossed their path.
+
+                        "Well, that was unexpected," Jax remarked, his lips quirking up in a wry smile as he turned to
+                        his companions.
+
+                        Elena laughed uproariously, her eyes sparkling with mischief as she clapped Sarah on the back.
+
+                        "Looks like even Batman needs to take care of business sometimes," Elena joked, her laughter
+                        echoing into the night.
+
+                        And as they settled back into their makeshift camp, their hearts light and their spirits buoyed
+                        by the unexpected encounter, Sarah, Jax, and Elena knew that their journey was far from over.
+                        For as long as there were adventures to be had and mysteries to unravel, they would always be
+                        ready to answer the call of the night, their spirits unbroken and their resolve unwavering in
+                        the face of whatever challenges lay ahead.
+
+                        And so, with the memory of Batman's unexpected visit still fresh in their minds, they settled in
+                        to enjoy the tranquility of the oasis, their laughter mingling with the gentle rustle of palm
+                        fronds as they toasted to the adventures yet to come and the friendships that would last a
+                        lifetime. For in the end, it was not the battles fought or the treasures won that mattered most
+                        - it was the moments shared and the memories made along the way that truly defined their
+                        journey.</p> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Your existing content here -->
+
+        <!-- Navigation arrow -->
+        <div class="row">
+            <div class="col-md-12 text-center" id="back-button">
+                <a href="index.html" class="navigation-link">
+                    <button class="btn btn-custom">Back to First Page</button>
+                    <!-- Button to navigate back to first page -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
